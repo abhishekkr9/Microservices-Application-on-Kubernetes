@@ -1,0 +1,79 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# =========================
+# Logs / Runtime artifacts
+# =========================
+logs/
+*.log
+*.out
+*.err
+*.pid
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.env
+*.pem
+*.key
+
+# Kubernetes local secret manifests (keep sample files if you add them)
+k8s/*secret*.yaml
+!k8s/*secret*.example.yaml
+
+# =========================
+# Python (auth-service, notes-service, notification-service)
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.python-version
+.venv/
+venv/
+env/
+
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# =========================
+# Node / Vite (frontend)
+# =========================
+node_modules/
+frontend/node_modules/
+
+dist/
+frontend/dist/
+dist-ssr/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend local-only config
+*.local
+
+# =========================
+# Docker / Compose local overrides
+# =========================
+docker-compose.override.yml
+
